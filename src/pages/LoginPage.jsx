@@ -19,8 +19,8 @@ export const LoginPage = () => {
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
-                    placeholder='name'
-                    onChange={(e) => setUserData({ ...userData, name: e.target.value })}
+                    placeholder='username'
+                    onChange={(e) => setUserData({ ...userData, username: e.target.value })}
                 />
                 <input
                     type="password"

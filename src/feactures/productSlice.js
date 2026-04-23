@@ -20,7 +20,7 @@ const productSlice = createSlice({
             state.items.push(action.payload);
         },
         deleteProduct: (state, action) => {
-            state.items = state.items.filter(p => p.id !== action.payload.id);
+            state.items = state.items.filter(p => p.id !== action.payload);
         },
         updateProduct: (state, action) => {
             const index = state.items.findIndex(p => p.id === action.payload.id)

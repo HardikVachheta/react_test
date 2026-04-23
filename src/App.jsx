@@ -17,11 +17,11 @@ function App() {
   const { token } = useSelector((state) => state.auth);
 
   return (
-    <Router>
+    <>
       <div className='App'>
         <nav style={{ padding: '1rem', borderBottom: '1px solid #ccc' }}>
           <strong>Product Management</strong>
-          {token && <span style={{ marginLeft: '20px', color='green' }}>Authenticated</span>}
+          {token && <span style={{ marginLeft: '20px', color:'green' }}>Authenticated</span>}
         </nav>
         <main style={{ padding: '2rem' }}>
           <Routes>
@@ -43,7 +43,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </Router>
+    </>
   )
 }
 
